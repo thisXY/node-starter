@@ -1,0 +1,72 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base"],
+  "rules": {
+    "array-callback-return": "off",
+    "arrow-body-style": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "class-methods-use-this": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "no-script-url": "off",
+    "no-underscore-dangle": "off",
+    "brace-style": "off",
+    "consistent-return": "off",
+    "default-case": "off",
+    "global-require": "off",
+    "guard-for-in": "off",
+    "function-paren-newline": "off",
+    "no-await-in-loop": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"]  }],
+    "no-continue": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-mixed-operators": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-globals": "off",
+    "no-restricted-syntax": "off",
+    "no-return-assign": "off",
+    "no-return-await": "off",
+    "no-shadow": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    "no-use-before-define": "off",
+    "no-unused-expressions": ["error", {
+      "allowShortCircuit": true
+    }],
+    "max-len": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "padded-blocks": "off",
+    "prefer-destructuring": "off",
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "implicit-arrow-linebreak": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-mutable-exports": "off",
+    "import/no-named-as-default": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "func-names": "off"
+  },
+  "env": {
+    "commonjs": true,
+    "es6": true
+  },
+  "globals": {
+    // global vars
+    "fetch": false,
+    "mock": false,
+    "mockStore": false,
+    "mockT": false,
+    "fetchMock": false,
+    "__DEV__": false
+  }
+}
