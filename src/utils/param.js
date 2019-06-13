@@ -5,7 +5,7 @@
 exports.format = obj => {
   const params = [];
 
-  const paramHandle = (paramObj, keyName) => {
+  const paramHandle = (paramObj = {}, keyName) => {
     let type = Object.prototype.toString.call(paramObj);
     if (type === '[object String]' || type === '[object Number]') {
       params.push([keyName, paramObj]);
