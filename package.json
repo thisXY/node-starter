@@ -14,8 +14,8 @@
   },
   "version": "0.1.0",
   "scripts": {
-    "start": "NODE_ENV=development supervisor app",
-    "dev": "NODE_ENV=development ./node_modules/.bin/nodemon bin/www",
+    "start": "cross-env NODE_ENV=development supervisor app",
+    "dev": "cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www",
     "prd": "pm2 start bin/www",
     "lint": "eslint src",
     "lint-fix": "eslint --fix src"
@@ -52,6 +52,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "commitlint": "^7.6.1",
+    "cross-env": "^6.0.3",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",
