@@ -21,7 +21,7 @@
     "lint-fix": "eslint --fix src"
   },
   "dependencies": {
-    "async": "^2.5.0",
+    "async": "^3.2.2",
     "babel-core": "^6.26.0",
     "busboy": "^0.3.1",
     "debug": "^4.1.1",
